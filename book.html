@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<script src="/js/website.js"></script>
+<script src="/js/list-ticker.js"></script>
+
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+
+    <title>ACE Airlines</title>
+
+
+        <link rel="stylesheet" href="/css/flight.css">
+        <script src="/js/booking.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            
+<nav id="nav">
+    <ul class="nav">
+        <li class="nav-element">
+            <a href='/'>Home</a>
+        </li>
+        <li class="nav-element">
+            <a href='/book.html'>Booking</a>
+        </li>
+        <li class="nav-element">
+            <a href='/jobs.html'>Jobs</a>
+        </li>
+    </ul>
+</nav>
+
+<script src="/js/nav.js"></script>
+
+            <div id='titlecard' class="titlecard">
+                    <div class="titlebox">
+                        <h1 class="title">ACE Airlines</h1>
+                        <p class="slogan">Book Flight</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="main">
+                <h2>Book your flight</h2>
+                <form action="/flight-confirmation.html" class="booking" onsubmit="formsubmit">
+                    <datalist id="ports">
+                        <option value="Baltimore/Washington International Thurgood Marshall Airport (BWI)">
+                        <option value="LaGuardia Airport (LGA)">
+                        <option value="Trenton-Mercer Airport (TTL)">
+                        <option value="Philadelphia International Airport (PHL)">
+                        <option value="Pittsburgh International Airport (PIT)">
+                        <option value="Ronald Reagan Washington National (DCA)">
+                        <option value="Washington Dulles International (IAD)">
+                        <option value="Yeager Airport (CRW)">
+                        <option value="John F Kennedy Airport (JFK)">
+                        <option value="Wilmington Airport (ILG)">
+                        <option value="Hagerstown Regional Airport (HGR)">
+                        <option value="Atlantic City International Airport (ACY)">
+                        <option value="Newark Liberty International Airport (EWR)">
+                    </datalist>
+
+                    <div class="group">
+                        <div class="group left">
+                            <label for="from">Airport From</label><input name="from" required list="ports" type="text">
+                        </div>
+
+                        <div class="group right">
+                            <label for="to">Airport To</label><input name="to" required list="ports" type="text">
+                        </div>
+                    </div>
+
+                    <h3 class="category">Flight Information</h3>
+                    <div class="group">
+                        <div class="group left">
+                            <label for="oneway">Flight Type</label>
+                            <select name="oneway" id="oneway" required onchange="onewaychange()">
+                                <option value="oneway">One Way</option>
+                                <option value="roundtrip">Round Trip</option>
+                            </select>
+                        </div>
+                        <div class="group right"></div>
+                    </div>
+
+                    <h3 class="category">Dates</h3>
+                    <div class="group">
+                        <div class="group left">
+                            <label for="date">Date Leaving</label><input name="leavingdate" required type="date">
+                        </div>
+                        
+                        <!-- CHECK IF TWO-WAY -->
+                        <div class="group right">
+                            <span class="group right" id="two-way" style="display: none; font-size: 1em;"><label for="date">Date Coming Back</label><input name="arrivingdate" type="date"></span>
+                        </div>
+                    </div>
+
+                    <h3 class="category">Travelers</h3>
+                    <div class="group">
+                        <div class="group left">
+                        <label for="adults">Adults (18+)</label><input name="adults" min="0" value="1" required type="number">
+                        </div>
+                        <div class="group right">
+                            <label for="children">Children (&lt; 18)</label><input name="adults" min="0" value="0" required type="number">
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group left">
+                            <label for="promo">Promotional Code</label><input name="promo" type="text" placeholder="Leave blank if none">
+                        </div>
+                        <div class="group right">
+                            <input type="submit" value="Book Flight!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            
+<footer>
+    <h2 style="margin-bottom: 5px;">Connect With Us</h2>
+    <ul>
+        <li><a href="#"><i class="fa fa-twitter twitter ssm" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook facebook ssm" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram instagram ssm" aria-hidden="true"></i></a></li>
+    </ul>
+    <hr/>
+    <p>Copyright © 2019 A.C.E Airlines | All Rights Reserved</p>
+</footer>
+
+<!--https://www.flaticon.com/authors/pixel-perfect Icon Creator-->
+        </div>
+    </body>
+</html>

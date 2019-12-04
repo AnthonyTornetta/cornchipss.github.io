@@ -1,0 +1,46 @@
+nav {
+  width: 100%;
+  background-color: #209CEE;
+  top: 0;
+  position: fixed;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 16px 20px;
+  text-align: center;
+  display: block;
+  color: white;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+nav .colored {
+  background-color: #048;
+}
+
+nav .colored ul li a {
+  color: white;
+}
+/*# sourceMappingURL=nav.css.map */

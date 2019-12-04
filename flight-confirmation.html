@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<script src="/js/website.js"></script>
+<script src="/js/list-ticker.js"></script>
+
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+
+    <title>ACE Airlines</title>
+
+
+
+        <script>
+        function getUrlVars()
+        {
+            let vars = {};
+            let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, (m,key,value) =>
+            {
+                vars[key] = value;
+            });
+            return vars;
+        }
+</script>
+    </head>
+    <body>
+        <div class="wrapper">
+            
+<nav id="nav">
+    <ul class="nav">
+        <li class="nav-element">
+            <a href='/'>Home</a>
+        </li>
+        <li class="nav-element">
+            <a href='/book.html'>Booking</a>
+        </li>
+        <li class="nav-element">
+            <a href='/jobs.html'>Jobs</a>
+        </li>
+    </ul>
+</nav>
+
+<script src="/js/nav.js"></script>
+
+            <div id='titlecard' class="titlecard">
+                    <div class="titlebox">
+                        <h1 class="title">ACE Airlines</h1>
+                        <p class="slogan">Booking Successful!</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="main">
+                <h2>Booking Successful!</h2>
+                <p>Your flight has been schedueled for <span style="font-size: 1em;" id="date"></span>!</p>
+                <p>Click <a href="/">here</a> to return to the home page.</p>
+
+                <script>
+                    // im too lazy to do this elsewhere
+                    document.getElementById('date').innerHTML = getUrlVars()['leavingdate'];
+                </script>
+            </div>
+
+            
+<footer>
+    <h2 style="margin-bottom: 5px;">Connect With Us</h2>
+    <ul>
+        <li><a href="#"><i class="fa fa-twitter twitter ssm" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook facebook ssm" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram instagram ssm" aria-hidden="true"></i></a></li>
+    </ul>
+    <hr/>
+    <p>Copyright © 2019 A.C.E Airlines | All Rights Reserved</p>
+</footer>
+
+<!--https://www.flaticon.com/authors/pixel-perfect Icon Creator-->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Vegur';
+  src: url("/fonts/Vegur-Regular.woff");
+}
+
+@font-face {
+  font-family: 'Light';
+  src: url("/fonts/Vegur-Light.woff");
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url("/fonts/Vegur-Bold.woff");
+}
+/*# sourceMappingURL=fonts.css.map */
