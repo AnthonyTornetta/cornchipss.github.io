@@ -20,11 +20,12 @@
     <title>ACE Airlines</title>
 
 
+        <script src="./js/flight-list.js"></script>
 
         <script>
             website.addOnLoad(() =>
             {
-                tickList('slogan-list', 12);
+                tickList('quote-list', 12);
             });
             console.log('RkJMQSBpcyBzdHVwaWQgYW5kIGEgcHlyYW1pZCBzY2hlbWUu');
         </script>
@@ -56,10 +57,8 @@
                     <h1 class="title">ACE Airlines</h1>
 
                     <div class="center-box">
-                        <noscript>
-                            <p>Affordable, Captivating, Efficient</p>
-                        </noscript>
-                        <ul id="slogan-list" style="display: none; margin: 0;" class="slogan">
+                        <p class="slogan">Affordable, Captivating, Efficient</p>
+                        <ul id="quote-list" style="display: none; margin: 0;" class="slogan">
                             <li>ACE flies to 5 states in the United States to 14 destinations.</li>
                             <li>"Entire flight was free thanks to the ACE Mastercard"</li>
                             <li>Serving over 5 million customers in our last 50 years.</li>
@@ -67,7 +66,6 @@
                             <li>ACE Airlines is proud to announce a 92% satisfaction rate from customers!</li>
                             <li>"Best flying experience I’ve had in years"</li>
                         </ul>
-
                         <!--For your own safety, we have a U.S. Marshal under disguise in every flight-->
                     </div>
                 </div>
@@ -82,6 +80,7 @@
                     <div>
                         <h2>Join and Save</h2>
                         <p>Access our discounts to fares, vacation bundles, and even discounts on bags by joing our frequent fliers program!</p>
+                        <p style="margin-top: 20px;"><a href="/flyer.html" class="button">Learn More</a></p>
                     </div>
                     <div class="pic">
                         <div class="img" style="background-image: url('/images/1-1230899662dsW5.jpg');"></div>
@@ -94,7 +93,7 @@
                     </div>
                     <div>
                         <h2>Subscribe For More Savings</h2>
-                        <p>Constantly searching for discounts and promotions with our company online but never search at the right time? Join our email list to never miss another opportunity to save money with our company</p>
+                        <p>Constantly searching for discounts and promotions with our company online but never search at the right time? Join our email list to never miss another opportunity to save money with our company.</p>
                     </div>
                 </div>
 
@@ -102,7 +101,7 @@
                     <div>
                         <h2>ACE Mastercard</h2>
                         <p>Get an ACE Mastercard today to enjoy some of our many benefits. With a max of 60,000 miles, you'll be getting free flights in no time!</p>
-                        <p><a href="/flyer.html">Your Mastercard is just one click away!</a></p>
+                        <p>Call (801) 888-7777 to setup your Mastercard today!</a></p>
                     </div>
                     <div class="pic">
                         <div class="img" style="background-image: url('/images/flying.jpg');"></div>
@@ -117,7 +116,18 @@
                     <div>
                         <h2>Book Your Flight Now</h2>
                         <p>Flying to over 14 cities surrounding the Pennsylvania area, ACE is compared to many of the premier airlines while offering tickets up to 75% cheaper than competitors</p>
-                        <a href="/book.html" class="button">Book Now</a>
+                        <p style="margin-top: 20px;"><a href="/book.html" class="button">Book Now</a></p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <div class="flights">
+                        <h2>Current Flight Schedule</h2>
+                        <noscript>
+                            <p>Please enable JavaScript to view flights.</p>
+                        </noscript>
+                        <table id="flights">
+                        </table>
                     </div>
                 </div>
 
@@ -132,7 +142,7 @@
                         </div>
 
                         <div class="group">
-                            <div><img alt="Pilot" src="\images\unknown.png"></div>
+                            <div><img alt="Pilot" src="\images\person.png"></div>
                             <div><h3>Pilots</h3></div>
                         </div>
 
@@ -147,7 +157,7 @@
                         </div>
                     </div>
                     <div class="pic">
-                        <div class="img" style="background-image: url('/images/soldiers-boarding-at-sunset.jpg');"></div>
+                        <div class="img" style="background-image: url('/images/team.png');"></div>
                     </div>
                 </div>
             </div>
@@ -156,9 +166,9 @@
 <footer>
     <h2 style="margin-bottom: 5px;">Connect With Us</h2>
     <ul>
-        <li><a href="#"><i class="fa fa-twitter twitter ssm" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook facebook ssm" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram instagram ssm" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" href="https://www.twitter.com/login"><i class="fa fa-twitter twitter ssm" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/login"><i class="fa fa-facebook facebook ssm" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram instagram ssm" aria-hidden="true"></i></a></li>
     </ul>
     <hr/>
     <p>Copyright © 2019 A.C.E Airlines | All Rights Reserved</p>

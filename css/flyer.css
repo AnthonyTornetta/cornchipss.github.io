@@ -1,0 +1,49 @@
+.packages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.packages .package, .packages .box {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1%;
+  -webkit-box-shadow: 7px 7px 28px -8px rgba(0, 0, 0, 0.68);
+          box-shadow: 7px 7px 28px -8px rgba(0, 0, 0, 0.68);
+  padding: 2%;
+  padding-bottom: 5%;
+  min-width: 318px;
+}
+
+.packages .package .title, .packages .box .title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.packages .package ul li, .packages .box ul li {
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 1286px) {
+  .packages .package, .packages .box {
+    margin: 5%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+/*# sourceMappingURL=flyer.css.map */
